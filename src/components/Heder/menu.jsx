@@ -6,8 +6,8 @@ function CrMenu(){
           <HederFunct/>
         <div class="menu">
           <CrElMenu slk='home'text = 'Главная' />
-          <CrElMenu slk='kont' text='Контакты'/>
-          <CrElMenu slk='home' text='Настройки'/>
+          <CrElMenu slk='post' text='Контакты'/>
+          <CrElMenu slk='setting' text='Настройки'/>
         </div>
       </div>
       

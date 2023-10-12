@@ -10,28 +10,37 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     
-    <div className="app">
-      {/* <HederFunct/> */}
-      <CrMenu/>
-      <div class='block'>
-        {/* <CrDialogs/> */}
-        <CrPost/>       
-      </div>
+    // <div className="app">
+    //   {/* <HederFunct/> */}
+    //   <CrMenu/>
+    //   <div class='block'>
+    //     {/* <CrDialogs/> */}
+    //     <CrPost/>       
+    //   </div>
        
 
-    </div>
-   
-  //   <BrowserRouter>
-  //   <Routes>
-  //   <CrMenu/>
-  //   //   <div class='block'>
-  //   //     <CrDialogs/>
-  //   //     <Route path='/home' element={<CrPost/>}/>
-  //   //     <Route path='/post' component={<CrDialogs/>}/>
+    // </div>
+
+
+
+       <div className="app">
+    <CrMenu/>
+    <div class='block'>
+     {/* <CrDialogs/> */}
+    <BrowserRouter>
+    <Routes>
+  
     
-  //   //   </div>
-  //   </Routes>
-  // </BrowserRouter>
+    
+      <Route path='/home' element={<CrPost/>}/>
+     <Route path='/post' element={<CrDialogs/>}/>
+    
+    
+    </Routes>
+  </BrowserRouter>
+  </div>
+   </div>
+
 
     
   );
