@@ -1,13 +1,13 @@
-import { CrDialog, CrElDialogName } from "./profile"
+import { CrDialog, CrElDialogName } from "../Heder/profile"
 function CrDialogs(){
     return(
             
          <div class = 'dialogs'>
             <div class='zagolChat'>
-            <h1 >Чаты</h1>
+                <h1 >Чаты</h1>
             </div>
            
-            <div class="dialName">
+            <div>
                 <CrElDialogName name='name'/>
                 <CrElDialogName name='name'/>
                 <CrElDialogName name='name'/>

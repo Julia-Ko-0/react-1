@@ -1,7 +1,7 @@
 function CrElMenu(props){
     return(
         <div class='menuEl'>
-            <h2>{props.text}</h2>
+            <a href={props.slk} >{props.text}</a>
         </div>
     )
 }

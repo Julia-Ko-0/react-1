@@ -1,48 +1,59 @@
-
-.header{
-  background-color:aquamarine;
-  display: flex;
-  padding: 10px;
-  margin: 10px;
-  
-  
-}
-.app{
-  width: 100%;
-  height: 100%;
-}
 .header img{
   width: 65px;
   height: 65px;
   margin-right: 20px;
+  border: 1px solid 
+  #8a99bb;
+  border-radius: 50%;
 }
+.header{
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  position:right;
+ 
+}
+.bok{
+  position:sticky;
+  top: 0;
+height: 10%;
+}
+  
+.app{
+  width: 100%;
+  height: 100%;
+  display:flex;
+ 
+}
+
 .block{
-  background-color: rgb(200, 243, 239);
+  background-color: #E6ECFE;
   display:flex;
   height:1000px;
 }
 .menu{
-  background-color: rgb(138, 208, 230);
   margin-left: 20px;
   width: 200px;
   height: 100%;
+  font-size: 160%;
 }
-.post{
-  background-color: rgb(147, 182, 172);
-  margin-left: 20px;
-  width:70%;
-  height: 40%;
-  padding: 20px;
-} 
-.dialName{
-  background-color: rgb(187, 238, 238)
+.menuEl{
+  padding: 6px;
 }
+
 .dialogs{
-  display:;
+  display:inline-table;
   padding: 20px;
+
 }
 .zagolChat{
+  border-bottom: 2px solid 
+  #d2daf3;
   display:flex;
   width: 100vw;
-  background-color: aqua;
+  position:sticky;
+  top: 0;
+  background: #E6ECFE;
+
+
 }

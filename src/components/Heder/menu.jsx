@@ -2,13 +2,13 @@ import { CrElMenu} from "./profile"
 import{HederFunct} from "./heder"
 function CrMenu(){
     return(
-      <div>
-        <HederFunct/>
-      <div class="menu">
-        <CrElMenu text = 'Меню'/>
-        <CrElMenu text='Контакты'/>
-        <CrElMenu text='Настройки'/>
-      </div>
+      <div class="bok">
+          <HederFunct/>
+        <div class="menu">
+          <CrElMenu slk='home'text = 'Главная' />
+          <CrElMenu slk='kont' text='Контакты'/>
+          <CrElMenu slk='home' text='Настройки'/>
+        </div>
       </div>
       
     )
