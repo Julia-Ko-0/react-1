@@ -1,12 +1,21 @@
 
 import './App.css';
-import { Funct ,Funct2} from './components/Heder/heder';
+
+import { CrMenu } from './components/Heder/menu';
+import { CrPost } from './components/Heder/post';
+import { CrDialogs } from './components/Heder/dialog';
+
 function App() {
   return (
-    <div className="App">
-      <a>мой проект</a>
-      <Funct/>
-      <Funct2/>
+    <div className="app">
+      {/* <HederFunct/> */}
+      <div class='block'>
+        <CrMenu/>
+        {/* <CrPost/> */}
+        <CrDialogs/>
+      </div>
+       
+
     </div>
   );
 }
