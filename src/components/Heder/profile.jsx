@@ -1,8 +1,16 @@
+import { NavLink } from "react-router-dom"
+
 function CrElMenu(props){
     return(
-        <div class='menuEl'>
-            <a href={props.slk} >{props.text}</a>
-        </div>
+        <nav class='menuEl'>
+            <div class='pfoto' >
+                <img src={props.foto}></img>
+        
+            </div>
+        
+            {/* <a href={props.slk} class = 'name_Menu'>{props.text}</a> */}
+            <NavLink to={props.skl} class='askl'>{props.text}</NavLink>
+        </nav>
     )
 }
 function CrPostEl(props){
@@ -13,17 +21,21 @@ function CrPostEl(props){
 }
 function CrElDialogName(props){
     return(
-        <div>
-            <h2>{props.name}</h2>
+        <div class='chat' >
+            <div class='pfoto' >
+                <img src={props.pfoto} />
+            </div>
+            <NavLink to={props.slk} >{props.name}</NavLink>
         </div>
     )
 }
-function CrDialog(props){
-    return(
-        <div>
-            {/* <h2>{props.texts}</h2> */}
-            <h2>props.text</h2>
-        </div>
-    )
-}
-export{CrElMenu,CrPostEl,CrElDialogName,CrDialog}
+// function CrDialog(props){
+//     return(
+//         <div>
+//             {/* <h2>{props.texts}</h2> */}
+//             <h2>{props.text}</h2>
+//         </div>
+//     )
+// }
+
+export{CrElMenu,CrPostEl,CrElDialogName}

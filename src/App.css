@@ -7,10 +7,11 @@
   border-radius: 50%;
 }
 .header{
-  display: flex;
+  display: block;
+  text-align: center;
   padding: 10px;
   margin: 10px;
-  position:right;
+  /* position:right; */
  
 }
 .bok{
@@ -30,6 +31,7 @@ height: 10%;
   background-color: #E6ECFE;
   display:flex;
   height:1000px;
+  width: 100%;
 }
 .menu{
   margin-left: 20px;
@@ -38,22 +40,74 @@ height: 10%;
   font-size: 160%;
 }
 .menuEl{
+  text-decoration: none;
+  font-size:medium;
+  font-weight: 500;
+  color: #2A8BF2;
+text-transform: uppercase;
+  
+  font-family:'Segoe UI',helvetica;
   padding: 6px;
+  display:flex;
+  /* text-decoration: none; */
+}
+  
+  /* text-emphasis-color: #2A8BF2; */
+
+a{
+  color:#707C97;
+  text-decoration: none;
+}
+a:active{
+  color: #2A8BF2;
 }
 
+
 .dialogs{
-  display:inline-table;
-  padding: 20px;
+  display:;
+  padding-right: 200px;
+  width: 100%;
 
 }
 .zagolChat{
   border-bottom: 2px solid 
   #d2daf3;
   display:flex;
-  width: 100vw;
+  width: 100%;
   position:sticky;
   top: 0;
   background: #E6ECFE;
 
 
+}
+.name_Menu{
+  padding-left: 20px;
+}
+.pfoto img{
+ 
+width: 30px;
+height: 30px;
+margin: 5px;
+}
+.chat{
+  display: flex;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgb(255, 255, 255);
+ /* height: ; */
+
+  /* padding: 20px;
+  padding-right: 20px; */
+  /* background-color: aqua; */
+}
+.chats a{
+  display: ;
+ /* height: 85%; */
+ width: 80%;
+ margin: 20px;
+
+  /* padding: 20px;
+  padding-right: 20px; */
+  /* margin-right: 20%; */
+ 
 }
