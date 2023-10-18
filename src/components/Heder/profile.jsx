@@ -19,16 +19,7 @@ function CrPostEl(props){
           
     )
 }
-function CrElDialogName(props){
-    return(
-        <div class='chat' >
-            <div class='pfoto' >
-                <img src={props.pfoto} />
-            </div>
-            <NavLink to={props.slk} >{props.name}</NavLink>
-        </div>
-    )
-}
+
 // function CrDialog(props){
 //     return(
 //         <div>
@@ -38,4 +29,4 @@ function CrElDialogName(props){
 //     )
 // }
 
-export{CrElMenu,CrPostEl,CrElDialogName}
+export{CrElMenu,CrPostEl}

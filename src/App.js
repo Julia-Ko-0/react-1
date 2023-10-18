@@ -10,18 +10,17 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
-    <div className="app">
-    <CrMenu/>
-    <div class='block'>
-    <Routes>
-
-      <Route path='/home' element={<CrPost/>}/>
-     <Route path='/chat' element={<CrDialogs/>}/>
-     
-     </Routes>
-  </div>
-  
-   </div>
+      <div className="app">
+        <CrMenu/>
+        
+        <div class='block'>
+          <Routes>
+            <Route path='/home' element={<CrPost/>}/>
+            <Route path='/chat' element={<CrDialogs/>}/>
+          </Routes>
+        </div>
+    
+      </div>
 
    </BrowserRouter>
     

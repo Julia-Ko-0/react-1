@@ -1,0 +1,79 @@
+.dialog_chat{
+    background-color: rgb(0, 0, 0);
+}
+.dialogs{
+    display:;
+    padding-right: 200px;
+    width: 100%;
+  
+  }.zagolChat{
+    border-bottom: 2px solid 
+    #d2daf3;
+    display:flex;
+    width: 100%;
+    position:sticky;
+    top: 0;
+    background: #E6ECFE;
+  
+  
+  }
+  .chat{
+    display: flex;
+    width: 580px;
+    height: 220px;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    /* text-size-adjust: 180px;
+     */
+     font-size: 18px;
+     font-weight: bold;
+     forced-color-adjust: red;
+   /* height: ; */
+  
+    /* padding: 20px;
+    padding-right: 20px; */
+    /* background-color: aqua; */
+  }
+  .chats a{
+   margin: 20px;
+  }
+  .chat{
+    display: block;
+    width: 580px;
+height: 220px;
+top: 290px;
+left: 350px;
+border-radius: 6px;
+
+  }
+
+  
+  .pfoto img{
+ 
+    width: 54px;
+    height: 54px;
+    margin: 5px;
+    margin-right: 20px;
+    border: 1px solid 
+    #8a99bb;
+    border-radius: 50%;
+    }
+.nav{
+color: #0D1C2E;
+}
+.pfoto{
+    display: flex;
+}
+.text_sms{
+    width: 450px;
+    height: 78px;
+    top: 391px;
+    left: 390px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #707C97;
+/* font-family:serif; */
+
+    
+}
