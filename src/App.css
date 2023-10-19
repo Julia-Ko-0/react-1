@@ -1,6 +1,6 @@
 .header img{
-  width: 65px;
-  height: 65px;
+  width: 100px;
+  height:100px;
   margin-right: 20px;
   border: 1px solid 
   #8a99bb;
@@ -17,7 +17,7 @@
 .bok{
   position:sticky;
   top: 0;
-height: 10%;
+height: 100%;
 }
   
 .app{
@@ -28,10 +28,9 @@ height: 10%;
 }
 
 .block{
-  background-color: #E6ECFE;
+  background:linear-gradient(to right,#F3F3FB,#FDFBFD);
   display:flex;
-  height:1000px;
-  width: 100%;
+  height:auto;
 }
 .menu{
   margin-left: 20px;
