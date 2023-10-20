@@ -1,4 +1,4 @@
-export let Mas=[
+let Mas=[
     { id:1,
         name:"name1",
         img:"",
@@ -18,3 +18,4 @@ export let Mas=[
         sms:"rkgmlrkes ndsjvnfdsk skdnf"
     }
 ]
+export default Mas 

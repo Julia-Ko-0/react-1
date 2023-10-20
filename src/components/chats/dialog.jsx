@@ -1,32 +1,33 @@
 import { CrElDialogName,CrSms,CrPolsName} from "./profile"
 import a from './dialog.module.css'
-import {Mas} from './masDial.jsx'
+// import {Mas} from './masDial.jsx'
 import { useState } from "react"
 // import {Poisk} from './poisk'
 
 
 // console.log(Mas)
+let App = [{ id:1,
+    name:"name1",
+    img:"",
+    status:"печатает...",
+    sms:"ndsjvnfdsk skdnf"
+},
+{ id:2,
+    name:"name2",
+    img:"https://www.svgrepo.com/show/530293/tree-2.svg",
+    status:"печатает...",
+    sms:"lkmrgrndsjvnfdsk skdnf"
+},
+{id:3,
+    name:"name3",
+    img:"",
+    status:"печатает...",
+    sms:"rkgmlrkes ndsjvnfdsk skdnf"
+}]
 function CrDialogs(){
     
-        // let [Mas,SetCount]=useState([{ id:1,
-        //     name:"name1",
-        //     img:"",
-        //     status:"печатает...",
-        //     sms:"ndsjvnfdsk skdnf"
-        // },
-        // { id:2,
-        //     name:"name2",
-        //     img:"https://www.svgrepo.com/show/530293/tree-2.svg",
-        //     status:"печатает...",
-        //     sms:"lkmrgrndsjvnfdsk skdnf"
-        // },
-        // {id:3,
-        //     name:"name3",
-        //     img:"",
-        //     status:"печатает...",
-        //     sms:"rkgmlrkes ndsjvnfdsk skdnf"
-        // }])
-        const [chat,SetCount]=useState(Mas)
+        let [Mas,SetCount]=useState(App)
+        // const [chat,SetCount]=useState(Mas)
         function DbElMas(){
                 let i1=prompt('name','')
                 let i2=prompt('sms')
@@ -37,19 +38,27 @@ function CrDialogs(){
                         status:"stat",
                         sms:i2
                     }
-                    SetCount([...chat,newChat])
+                    SetCount([...Mas,newChat])
+                    return(App)
             }
+            let app = Poisk.App
             function Poisk(){
                 let impPoisk = document.getElementById('impPoisk')
-                
+                impPoisk.addEventListener('keydown',(ev)=>{
+                    if(ev.key === "Backspace"){
+                        SetCount(App)
+                    }
+                })
                 if('' != impPoisk.value){
-                    let newChat = Mas.filter(a=> a.name.includes(impPoisk.value))
-                    console.log(newChat)
-                SetCount([newChat])
+                    let NewChat = Mas.filter(a=> a.name.includes(impPoisk.value))
+                SetCount(NewChat)
                     
-                    console.log(Mas)
+                    // console.log(Mas)
+                    
+                    // return( Mas)
                 }
-                else{console.log('aaaaa')}
+       
+            console.log(App,Mas,app)
                 // SetCount([...Mas,newMas])
                 // SetCount(newChat)
             }
