@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom"
 import a from './dialog.module.css'
+import {Mas} from './masDial'
 
 function CrElDialogName(props){
     return(
@@ -39,4 +40,9 @@ function CrSms(props){
         </div>
 )
 }
-export{CrElDialogName,CrSms,CrPolsName}
+function ModalEl(){
+    // let md = document.getElementById('msOkn')
+    // md.
+}
+
+export{CrElDialogName,CrSms,CrPolsName,ModalEl}
