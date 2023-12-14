@@ -128,12 +128,18 @@ function CrImp(props){
     let [values,SetValue]=useState('')
     return(   
         <div class={a.btn_otpr}>
-            <input onInput={(e)=>{
+            <input value={values} id='inp' onInput={(e)=>{
                 SetValue(e.target.value)
+                
             }} placeholder="Type a message here"></input>
            <img class={a.smole}src="./imgs/Smile icon.png"/>
            <img onClick={()=>{
+            if(values !='' && values!=' '){
                 props.uMas(values,props.ids)
+                SetValue('')
+            }
+              
+               
            }} class={a.btn_ot_i} src="./imgs/Send Icon.png" alt="" />
                       
         </div>
