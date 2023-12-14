@@ -28,21 +28,60 @@ return(
     </div>
 )
 }
+// function CrSms(props){
+//     let url = new URLSearchParams(window.location.search).get("id")
+//     if(props.ids == url){
+//         return(
+//             <div class={a.smChat}>
+//             {/* <CrPolsName name="name" sost="sostoan"/> */}
+//             <div class={a.sms}>
+//                         <img src={props.imgs}/>
+//                         <div class={a.smsSm}>
+//                             <h2>{props.smsText}</h2>
+//                         </div>
+                        
+//                     </div>
+//             </div>
+                  
+//             )
+//     }
+   
+// }
 function CrSms(props){
-    return(
-
-        <div class={a.sms}>
-            <img src={props.imgs}/>
-            <div class={a.smsSm}>
-                <h2>{props.smsText}</h2>
-            </div>
-            
-        </div>
-)
+    console.log('aaaaaa')
+    let url = new URLSearchParams(window.location.search).get("id")
+    
+    if(url == props.ids){
+        return(
+            <div class={a.smChat}>
+            <CrPolsName name="name" sost="sostoan"/>
+            {/* {
+                props.smsText.map(chat=>(
+                    <ModalEl sms={chat.s} kto={chat.k}/>
+                ))
+            } */}
+         
+               </div>   
+            )
+    }
+       
+    
+   
 }
-function ModalEl(){
-    // let md = document.getElementById('msOkn')
-    // md.
+
+function ModalEl(props){
+
+    return(
+        <div class={a.sms}>
+        <img src={props.imgs}/>
+        <div class={a.smsSm}>
+            <h2>{props.s}</h2>
+        </div>
+        
+    </div>
+
+    )
+ 
 }
 
 export{CrElDialogName,CrSms,CrPolsName,ModalEl}

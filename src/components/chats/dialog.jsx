@@ -10,19 +10,20 @@ let App = [{ id:1,
     name:"name1",
     img:"",
     status:"печатает...",
-    sms:"ndsjvnfdsk skdnf"
+    sms:[{s:"lkmrgrndsjvnfdsk skdnf",k:'y'}]
 },
 { id:2,
     name:"name2",
     img:"https://www.svgrepo.com/show/530293/tree-2.svg",
     status:"печатает...",
-    sms:"lkmrgrndsjvnfdsk skdnf"
+    sms:[{s:"lkmrgrndsjvnfdsk skdnf",k:'y'},{s:"pppppdsjvnfdsk skdnf",k:'m'}],
+
 },
 {id:3,
     name:"name3",
     img:"",
     status:"печатает...",
-    sms:"rkgmlrkes ndsjvnfdsk skdnf"
+    sms:[{s:"lkmrgrndsjvnfdsk skdnf",k:'y'}]
 }]
 function CrDialogs(){
     
@@ -36,7 +37,7 @@ function CrDialogs(){
                         name: i1,
                         img: null,
                         status:"stat",
-                        sms:i2
+                        sms:{s:i2,k:'y'}
                     }
                     SetCount([...Mas,newChat])
                     return(App)
@@ -46,7 +47,7 @@ function CrDialogs(){
                 let impPoisk = document.getElementById('impPoisk')
                 impPoisk.addEventListener('keydown',(ev)=>{
                     if(ev.key === "Backspace"){
-                        SetCount(App)
+                        SetCount(Mas)
                     }
                 })
                 if('' != impPoisk.value){
@@ -81,20 +82,50 @@ function CrDialogs(){
                             { 
                                 // const [Mas,setCount]=useState(Mas[])
                                 Mas.map(chat=>(
-                                    <CrElDialogName pfoto={chat.img} text={chat.sms} name={chat.name}/>
+                                    <CrElDialogName slk={'?id='+chat.id} pfoto={chat.img} text={chat.sms[chat.sms.length - 1].s} name={chat.name}/>
                                 ))
                             }
                             
                         </div>
                     </div>
                 </div>
-                <div className={a.dialog_chat}>
-                    <CrPolsName name="name" sost="sostoan"/>
-                    <div class={a.smChat}>
+                <div class={a.dialog_chat}>
+                    
+                {/* <CrPolsName name="name" sost="sostoan"/> */}
+                    
+                { 
+                                // const [Mas,setCount]=useState(Mas[])
+                                Mas.map(chat=>(
+                                    <CrSms ids = {chat.id} smsText={chat.sms} imgs="https://www.svgrepo.com/show/530293/tree-2.svg"/>
+                                ))
+                            }
+                        {/* <CrSms smsText="ghjd.fhkghdnfjhd" imgs="https://www.svgrepo.com/show/530293/tree-2.svg"/>
+                        <CrSms smsText="ghjd.fhkghftgjhrkljjjjjyoiutjyio    iotyort idtuoy rtdyurty rduyhrth dfuheyier drugh dur dufiridty dnfjhd" imgs="https://www.svgrepo.com/show/530293/tree-2.svg"/>
                         <CrSms smsText="ghjd.fhkghdnfjhd" imgs="https://www.svgrepo.com/show/530293/tree-2.svg"/>
                         <CrSms smsText="ghjd.fhkghftgjhrkljjjjjyoiutjyio    iotyort idtuoy rtdyurty rduyhrth dfuheyier drugh dur dufiridty dnfjhd" imgs="https://www.svgrepo.com/show/530293/tree-2.svg"/>
                    
-                    </div>
+                        <CrSms smsText="ghjd.fhkghdnfjhd" imgs="https://www.svgrepo.com/show/530293/tree-2.svg"/>
+                        <CrSms smsText="ghjd.fhkghftgjhrkljjjjjyoiutjyio    iotyort idtuoy rtdyurty rduyhrth dfuheyier drugh dur dufiridty dnfjhd" imgs="https://www.svgrepo.com/show/530293/tree-2.svg"/>
+                   
+                        <CrSms smsText="ghjd.fhkghdnfjhd" imgs="https://www.svgrepo.com/show/530293/tree-2.svg"/>
+                        <CrSms smsText="ghjd.fhkghftgjhrkljjjjjyoiutjyio    iotyort idtuoy rtdyurty rduyhrth dfuheyier drugh dur dufiridty dnfjhd" imgs="https://www.svgrepo.com/show/530293/tree-2.svg"/>
+                   
+                        <CrSms smsText="ghjd.fhkghdnfjhd" imgs="https://www.svgrepo.com/show/530293/tree-2.svg"/>
+                        <CrSms smsText="ghjd.fhkghftgjhrkljjjjjyoiutjyio    iotyort idtuoy rtdyurty rduyhrth dfuheyier drugh dur dufiridty dnfjhd" imgs="https://www.svgrepo.com/show/530293/tree-2.svg"/>
+                   
+                        <CrSms smsText="ghjd.fhkghdnfjhd" imgs="https://www.svgrepo.com/show/530293/tree-2.svg"/>
+                        <CrSms smsText="ghjd.fhkghftgjhrkljjjjjyoiutjyio    iotyort idtuoy rtdyurty rduyhrth dfuheyier drugh dur dufiridty dnfjhd" imgs="https://www.svgrepo.com/show/530293/tree-2.svg"/>
+                   
+                        <CrSms smsText="ghjd.fhkghdnfjhd" imgs="https://www.svgrepo.com/show/530293/tree-2.svg"/>
+                        <CrSms smsText="ghjd.fhkghftgjhrkljjjjjyoiutjyio    iotyort idtuoy rtdyurty rduyhrth dfuheyier drugh dur dufiridty dnfjhd" imgs="https://www.svgrepo.com/show/530293/tree-2.svg"/>
+                   
+                        <CrSms smsText="ghjd.fhkghdnfjhd" imgs="https://www.svgrepo.com/show/530293/tree-2.svg"/>
+                        <CrSms smsText="ghjd.fhkghftgjhrkljjjjjyoiutjyio    iotyort idtuoy rtdyurty rduyhrth dfuheyier drugh dur dufiridty dnfjhd" imgs="https://www.svgrepo.com/show/530293/tree-2.svg"/>
+                   
+                        <CrSms smsText="ghjd.fhkghdnfjhd" imgs="https://www.svgrepo.com/show/530293/tree-2.svg"/>
+                        <CrSms smsText="ghjd.fhkghftgjhrkljjjjjyoiutjyio    iotyort idtuoy rtdyurty rduyhrth dfuheyier drugh dur dufiridty dnfjhd" imgs="https://www.svgrepo.com/show/530293/tree-2.svg"/>
+                    */}
+
                 </div>
             </div> 
         </div>

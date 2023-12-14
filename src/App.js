@@ -16,7 +16,7 @@ function App() {
         <div class='block'>
           <Routes>
             <Route path='/home' element={<CrPost/>}/>
-            <Route path='/chat' element={<CrDialogs/>}/>
+            <Route path='chat/*' element={<CrDialogs/>}/>
           </Routes>
         </div>
     

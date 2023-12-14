@@ -26,7 +26,8 @@
 .smChat{
   background-color: #ffffff;
   width: 850px;
-  height: 100%;
+  height: 800px;
+  overflow-y: scroll;
 }
 .chZagl{
  
