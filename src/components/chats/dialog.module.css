@@ -1,6 +1,8 @@
 .obChats{
   display: inline;
   height: auto;
+  font-family: roboto;
+  font-size: 100%;
 }
 .modalOkn{
   /* display: block;
@@ -25,8 +27,8 @@
 }
 .smChat{
   background-color: #ffffff;
-  width: 850px;
-  height: 800px;
+  width: auto;
+  height: 650px;
   overflow-y: scroll;
 }
 .chZagl{
@@ -51,44 +53,73 @@
   border-radius: 50%;
  
 }
-
-.sms{
-  /* background-color:rgb(255, 255, 255); */
-  width: 622px;
+.smsMeDiv{
+  width: 500px;
+ 
   display: flex;
   padding: 10px;
-} 
+}
+
+.smsYou{
+  width: auto;
+  max-width: 500px;
+  display: flex;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+.smsMe{
+  /* background:linear-gradient(to right, #60A9F6, #2A8BF2); */
+  box-shadow: -3px 4px 27px rgba(221, 221, 221, 0.384), -3px 4px 8px rgba(221, 221, 221, 0.384);
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10px 0px 10px 10px;
+  
+
+}
 .smsSm{
   background:linear-gradient(to right, #60A9F6, #2A8BF2);
+  box-shadow: -3px 4px 27px #aacdf3, -3px 4px 8px #aacdf3;
   width: auto;
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 0 10px 10px;
 }
-.sms img{
-  
-  width: 36px;
-  height: 36px;
-  /* margin: 5px; */
+.smsMeDiv img{
   margin-right: 20px;
   border: 1px solid 
   #8a99bb;
-  border-radius: 50%;
+
+}
+.fales h1{
+  font-size: 100%;
+}
+.imgs{
+    border-radius: 50%;
+    width: 50px;
+
 }
 .dialog_chat{
   /* background-color: #0D1C2E; */
-    width: 850px;
+    width: 100%;
     height: auto;
 
 }
+.chats{
+  height: 750px;
+  margin-top: -60px;
+  overflow-y: scroll;
+}
 .chatsDial{
   /* background-color: chocolate */
-  display:flex;
+  display:grid;
+  grid-template-columns: 45% 45%;
+  gap: 20px;
 }
 .dialogs{
     display:grid;
-    padding-right: 200px;
-    width: 595px;
+    width: 70%;
     height: 100%;
     
   
@@ -128,41 +159,28 @@
     padding-left: 80px;
     font-size: 18px;
     color: #707C97;
-    /* background-image: url('https://icons8.ru/icon/59878/поиск'); */
-    
+  
   }
 
 .inp:focus{
   background-color: #eef7ff;
 }
   .chat{
-    /* display: flex; */
-    
-    height: 220px;
     padding: 20px;
-    margin: 20px;
+    margin: 5%;
     background-color: rgb(255, 255, 255);
-    /* text-size-adjust: 180px;
-     */
      font-size: 18px;
      font-weight: bold;
-     forced-color-adjust: red;
-   /* height: ; */
-  
-    /* padding: 20px;
-    padding-right: 20px; */
-    /* background-color: aqua; */
     display: block;
-    height: 220px;
-    top: 290px;
-    left: 350px;
-    border-radius: 6px;
-  }
-  .chats a{
-   margin: 20px;
- 
+    height: 200px;
   }
 
+.chat h1{
+  font-size: 120%;
+}
+.chat h2{
+  font-size: 120%;
+}
   
   .pfoto img{
  
@@ -203,4 +221,58 @@ height: 10px;
 .inf h3{
   font-size: 16px;
   color: #2A8BF2 ;
+}
+.btn_otpr{
+  display: grid;
+  grid-template-columns: 75% 5% 10%;
+border-top: 2px #707C97 solid;
+background-color: #FFFFFF;
+}
+.btn_ot_i{
+  grid-column-start: 3;
+  width: 100px;
+  height: 100px;
+}
+.btn_otpr input{
+  border:none ;
+  font-size: 25px;
+  padding-left: 50px;
+
+}
+.smole{
+  width: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.fales{
+  background-color: #5bb1eb93;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+}
+.photo{
+  background-color:  #ff336685;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+
+}
+
+.fales h1{
+  color: #2A8BF2;
+  text-align: center;
+
+}
+.fales svg{
+  width: 30%;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+.smsSm img{
+  width: auto;
+  height: auto;
+  max-width: 400px;
+
 }

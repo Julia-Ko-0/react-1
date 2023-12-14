@@ -1,7 +1,7 @@
 .header img{
   width: 100px;
   height:100px;
-  margin-right: 20px;
+
   border: 1px solid 
   #8a99bb;
   border-radius: 50%;
@@ -10,11 +10,12 @@
   display: block;
   text-align: center;
   padding: 10px;
-  margin: 10px;
-  /* position:right; */
+
+
  
 }
 .bok{
+  grid-column-start: 1;
   position:sticky;
   top: 0;
 height: 100%;
@@ -23,7 +24,8 @@ height: 100%;
 .app{
   width: 100%;
   height: 100%;
-  display:flex;
+  display:grid;
+  grid-template-columns: 15% 85% ;
  
 }
 
@@ -31,10 +33,10 @@ height: 100%;
   background:linear-gradient(to right,#F3F3FB,#FDFBFD);
   display:flex;
   height:auto;
+  width: auto;
 }
 .menu{
-  margin-left: 20px;
-  width: 200px;
+  padding-left: 20px;
   height: 100%;
   font-size: 160%;
 }
@@ -48,10 +50,10 @@ text-transform: uppercase;
   font-family:'Segoe UI',helvetica;
   padding: 6px;
   display:flex;
-  /* text-decoration: none; */
+
 }
   
-  /* text-emphasis-color: #2A8BF2; */
+
 
 
 
@@ -62,7 +64,7 @@ img{
  
   width: 30px;
   height: 30px;
-  margin: 5px;
+
   }
 
   a{
