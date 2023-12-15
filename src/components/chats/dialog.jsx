@@ -11,7 +11,7 @@ import { ModalEl,CrImp} from "./profile";
 let App = [{ id:1,
     name:"name1",
     img:"",
-    status:"печатает...",
+    status:"В сети",
     sms:[{s:"lkmrgrndsjvnfdsk skdnf",k:'y',f_t:'p',f_n:'./imgs/im_sms/picture.png'},
     {s:"aaaaaaaa",
         k:'y',f_t:'none',f_n:'none'},

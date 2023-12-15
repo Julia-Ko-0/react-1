@@ -201,6 +201,13 @@ color: #0D1C2E;
 .pfoto{
     display: flex;
 }
+.d_name h3{
+  color: #2A8BF2;
+  font-size: 16px;
+  margin:-15% ;
+  margin-left: 1%;
+  
+}
 .text_sms{
     width: 450px;
     height: 78px;
@@ -209,7 +216,8 @@ color: #0D1C2E;
     text-decoration: none;
     font-size: 13px;
     color: #707C97;
-/* font-family:serif; */
+    font-style: normal;
+line-height: 26px; 
 
     
 }
@@ -251,15 +259,33 @@ background-color: #FFFFFF;
   border-radius: 20px;
   display: flex;
 }
-.photo{
-  background-color:  #ff336685;
+.photos{
+  background-color: rgba(255, 51, 102, 0.25);
   width: 100px;
   height: 40px;
   border-radius: 20px;
   display: flex;
 
+
+}
+.photos svg{
+  width: 20px;
+  padding-left: 15%;
+
 }
 
+.photos h1{
+  color: #F36;
+  font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: 26px; 
+letter-spacing: -0.14px;
+margin-top: auto;
+
+margin-bottom: auto;
+
+}
 .fales h1{
   color: #2A8BF2;
   text-align: center;

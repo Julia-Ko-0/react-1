@@ -8,19 +8,22 @@ function CrElDialogName(props){
         <div class={a.chat} >
             <div class={a.pfoto} >
                 <img src={props.ids.img} />
+                <div class={a.d_name}>
                 <h1 onClick={()=>{props.upt(props.ids)}} class={a.nav}  >{props.ids.name}</h1>
+                <h3 >{props.ids.status}</h3>
+                </div>
+               
             </div>
             <div class={a.text_sms}>
                 <h2>{props.ids.sms[props.ids.sms.length - 1].s}</h2>
                 {props.ids.sms[props.ids.sms.length - 1].f_t == 'f' &&
                         <div class={a.fales}>
-                    
-                        <svg enable-background="new 0 0 32 32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="_x33_6-file"><g><path d="m25.7 10.3-8-8c-.2-.2-.4-.3-.7-.3h-10c-.6 0-1 .4-1 1v26c0 .6.4 1 1 1h18c.6 0 1-.4 1-1v-18c0-.3-.1-.5-.3-.7z" fill="#2A8BF2"></path><path d="m25.7 10.3-8-8c-.3-.3-.7-.4-1.1-.2-.4.1-.6.5-.6.9v8c0 .6.4 1 1 1h8c.4 0 .8-.2.9-.6.2-.4.1-.8-.2-1.1z" fill="#65a2fc"></path></g></g></svg>
-                       <h1>Files</h1>
+                    <svg fill="#2A8BF2" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M210.82861,69.17139l-40-40A4.00116,4.00116,0,0,0,168,28H88A12.01375,12.01375,0,0,0,76,40V60H56A12.01375,12.01375,0,0,0,44,72V216a12.01375,12.01375,0,0,0,12,12H168a12.01375,12.01375,0,0,0,12-12V196h20a12.01375,12.01375,0,0,0,12-12V72A4.00116,4.00116,0,0,0,210.82861,69.17139ZM172,216a4.00458,4.00458,0,0,1-4,4H56a4.00458,4.00458,0,0,1-4-4V72a4.00458,4.00458,0,0,1,4-4h78.34326L172,105.65674Zm32-32a4.00458,4.00458,0,0,1-4,4H180V104a4.00116,4.00116,0,0,0-1.17139-2.82861l-40-40A4.00116,4.00116,0,0,0,136,60H84V40a4.00458,4.00458,0,0,1,4-4h78.34326L204,73.65674Zm-64-32a4.0002,4.0002,0,0,1-4,4H88a4,4,0,0,1,0-8h48A4.0002,4.0002,0,0,1,140,152Zm0,32a4.0002,4.0002,0,0,1-4,4H88a4,4,0,0,1,0-8h48A4.0002,4.0002,0,0,1,140,184Z"></path> </g></svg>
+                     <h1>Files</h1>
                    </div>                
                 }
                     {props.ids.sms[props.ids.sms.length - 1].f_t == 'p' &&
-                        <div class={a.photo}>
+                        <div class={a.photos}>
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 8.976C3 4.05476 4.05476 3 8.976 3H15.024C19.9452 3 21 4.05476 21 8.976V15.024C21 19.9452 19.9452 21 15.024 21H8.976C4.05476 21 3 19.9452 3 15.024V8.976Z" stroke="#FF3366" stroke-width="2"></path> <path d="M17.0045 16.5022L12.7279 12.2256C9.24808 8.74578 7.75642 8.74578 4.27658 12.2256L3 13.5022" stroke="#FF3366" stroke-width="2" stroke-linecap="round"></path> <path d="M21 13.6702C18.9068 12.0667 17.4778 12.2919 15.198 14.3459" stroke="#FF3366" stroke-width="2" stroke-linecap="round"></path> <path d="M17 8C17 8.55228 16.5523 9 16 9C15.4477 9 15 8.55228 15 8C15 7.44772 15.4477 7 16 7C16.5523 7 17 7.44772 17 8Z" stroke="#FF3366" stroke-width="2"></path> </g></svg>     
                        <h1>Photo</h1>
                        </div>              
@@ -128,7 +131,7 @@ function CrImp(props){
     let [values,SetValue]=useState('')
     return(   
         <div class={a.btn_otpr}>
-            <input value={values} id='inp' onInput={(e)=>{
+            <input value={values}  onInput={(e)=>{
                 SetValue(e.target.value)
                 
             }} placeholder="Type a message here"></input>
