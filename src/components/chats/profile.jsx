@@ -50,7 +50,7 @@ function CrSms(props){
 //    console.log(props.mas.sms[0].s)
  return(
                
-                <CrPolsName mas ={props.mas.sms} name={props.mas.name} sost="sostoan"/>
+                <CrPolsName img={props.mas.img} mas ={props.mas.sms} name={props.mas.name} sost="sostoan"/>
                   
                 )
 
